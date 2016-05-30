@@ -1,0 +1,8 @@
+[user]
+	name = ***REMOVED***
+	email = ***REMOVED***
+	username = jackgerrits
+[core]
+	excludesfile =  ~/.gitignore_global
+[push]
+	default = simple
