@@ -57,6 +57,8 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
+# Set the prompt to something custom
+PROMPT='${time} ${pwd} $(git_prompt_info) > '
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
