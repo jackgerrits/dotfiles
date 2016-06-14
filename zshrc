@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/jackgerrits/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -12,7 +12,7 @@ ZSH_THEME="dieter"
 
 # Uncomment the following line to use hyphen-insensitive completion. Case
 # sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
+HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
@@ -53,7 +53,7 @@ plugins=(git)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -70,9 +70,6 @@ PROMPT='${time} ${pwd} $(git_prompt_info) > '
 #   export EDITOR='mvim'
 # fi
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
@@ -85,18 +82,12 @@ PROMPT='${time} ${pwd} $(git_prompt_info) > '
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-PATH="$PATH: .:/usr/texbin"
-alias mysql='/Applications/MAMP/Library/bin/mysql'
-alias mysqldump='/Applications/MAMP/Library/bin/mysqldump'
-code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/usr/local/mongo/bin:$PATH"
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
-export PATH=/Users/jackgerrits/Library/Android/sdk/platform-tools:$PATH
-export PATH=/Users/jackgerrits/Library/Android/sdk/tools:$PATH
 
-[ -s "/Users/jackgerrits/.dnx/dnvm/dnvm.sh" ] && . "/Users/jackgerrits/.dnx/dnvm/dnvm.sh" # Load dnvm
+[ -s "~/.dnx/dnvm/dnvm.sh" ] && . "~/.dnx/dnvm/dnvm.sh" # Load dnvm
 
 export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig/:$PKG_CONFIG_PATH" 
 
-export PYTHONPATH=/Users/jackgerrits/Downloads/caffe-master/install/include/:$PYTHONPATH

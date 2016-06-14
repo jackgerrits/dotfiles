@@ -11,7 +11,6 @@ ln -sv ${BASEDIR}/zshrc ~/.zshrc
 # git
 ln -sv ${BASEDIR}/gitconfig ~/.gitconfig
 
-
 if [ $(uname) == "Darwin"  ]; then
     # run the osx script
     echo "running osx setup script"
