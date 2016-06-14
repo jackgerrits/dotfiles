@@ -8,8 +8,14 @@ if [ $? == 1  ]; then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
+# Install zsh and set as default shell
 brew install zsh
 chsh -s $(which zsh)
+
+# Install Sublime Text 3
+brew install caskroom/cask/brew-cask
+brew tap caskroom/versions
+brew cask install sublime-text3
 
 # ohmyzsh
 if [ ! -d ~/.oh-my-zsh  ]; then
@@ -45,7 +51,7 @@ defaults write com.apple.finder QLEnableTextSelection -bool true
 # Enable Safari’s debug menu
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
 
-## Enable the Develop menu and the Web Inspector in Safari
+# Enable the Develop menu and the Web Inspector in Safari
 defaults write com.apple.Safari IncludeDevelopMenu -bool true
 defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
 defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
