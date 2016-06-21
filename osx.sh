@@ -12,17 +12,20 @@ fi
 brew install zsh
 chsh -s $(which zsh)
 
-# Install Sublime Text 3
-brew install caskroom/cask/brew-cask
-brew tap caskroom/versions
-brew cask install sublime-text3
-
 # ohmyzsh
 if [ ! -d ~/.oh-my-zsh  ]; then
     # install oh my zsh
     echo "installing oh my zsh..."
     curl -L http://install.ohmyz.sh | sh
 fi
+
+# Run sublime installation script
+./sublime.sh
+
+
+################
+# OSX Defaults #
+################
 
 # remove accent when holding down a key
 defaults write -g ApplePressAndHoldEnabled -bool false
@@ -55,5 +58,3 @@ defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
 defaults write com.apple.Safari IncludeDevelopMenu -bool true
 defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
 defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
-
-echo "note you may have to restart/re-login for all changes to take effect"
