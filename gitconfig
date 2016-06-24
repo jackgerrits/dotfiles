@@ -1,7 +1,7 @@
 [user]
-	name = ***REMOVED***
-	email = ***REMOVED***
-	username = jackgerrits
+	name = USER
+	email = EMAIL
+	username = USERNAME
 [core]
 	excludesfile =  ~/.gitignore_global
 [push]
