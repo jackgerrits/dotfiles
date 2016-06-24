@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "Running osx setup script"
+
 # brew
 which brew > /dev/null
 if [ $? == 1  ]; then

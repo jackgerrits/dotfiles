@@ -86,8 +86,15 @@ PROMPT='${time} ${pwd} $(git_prompt_info) > '
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/usr/local/mongo/bin:$PATH"
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+export PATH="/Users/jackgerrits/Documents/code/appengine-java-sdk-1.9.38/bin:$PATH"
 
 [ -s "~/.dnx/dnvm/dnvm.sh" ] && . "~/.dnx/dnvm/dnvm.sh" # Load dnvm
 
-export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig/:$PKG_CONFIG_PATH" 
+export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig/:$PKG_CONFIG_PATH"
 
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/Users/jackgerrits/Downloads/google-cloud-sdk/path.zsh.inc'
+
+# The next line enables shell command completion for gcloud.
+source '/Users/jackgerrits/Downloads/google-cloud-sdk/completion.zsh.inc'
