@@ -17,7 +17,6 @@ set shiftwidth=4
 set expandtab
 
 set cursorline
-set clipboard=unnamed
 
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
