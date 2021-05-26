@@ -7,27 +7,16 @@ which brew > /dev/null
 if [ $? == 1  ]; then
     # install brew
     echo "installing brew..."
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
-# Install zsh and set as default shell
-brew install zsh
-chsh -s $(which zsh)
+# Install fish and set as default shell
+brew install fish
+chsh -s $(which fish)
 
-# ohmyzsh
-if [ ! -d ~/.oh-my-zsh  ]; then
-    # install oh my zsh
-    echo "installing oh my zsh..."
-    curl -L http://install.ohmyz.sh | sh
-fi
-
-# Run sublime installation script
-./sublime.sh
-
-
-################
-# OSX Defaults #
-################
+# ------------
+# OSX Defaults
+# ------------
 
 # remove accent when holding down a key
 defaults write -g ApplePressAndHoldEnabled -bool false
