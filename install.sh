@@ -1,12 +1,10 @@
 #!/bin/bash
 
-BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-
 # --------
 # Symlinks
 # --------
 
-ln -sfv ${BASEDIR}/config ~/.config
+./install-symlinks.sh
 
 # ------------------------
 # OS specific installation
