@@ -28,6 +28,7 @@ nix-env -i any-nix-shell -f https://github.com/NixOS/nixpkgs/archive/master.tar.
 
 # Install fisher
 fish -c "curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher"
+fish -c "set -Ux CMAKE_GENERATOR Ninja"
 
 # Install fisher plugins
 fish -c "fisher update"
