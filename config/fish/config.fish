@@ -17,6 +17,5 @@ function fmt-branch -d "Run clang-format-diff against given branch" --argument-n
         nix-shell -p clang-format-diff --command "git diff $comparebranch...HEAD -U0 --no-color | clang-format-diff -r '^.*\.(cc|h)\$' -p1 -i"
     else
         echo "Usage: fmt-branch BRANCH_TO_DIFF"
-        exit 1
     end
 end
